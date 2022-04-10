@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Banca Nazionale</title>
+</head>
+<body>
+  <body background="sfondo/sfondo.jpg">
+        <h1>Banca Nazionale</h1>
+
+
+        <h3>Scelga l'operazione che vuole effettuare:</h3>
+        <form method="get" action="myservlet">
+
+         Numero del conto:
+         <input type="number" name="numeroconto" placeholder="es: 1234" required ><br>
+         Quantita in euro:
+         <input type="number" name="saldo" placeholder="es: 250,00$"  required> <br>
+																					
+
+         <select name="operazione">
+
+             <option value="">-Scegli il tipo di operazione-</option>
+             <option value="preleva">preleva</option>
+             <option value="saldo">saldo</option>
+             <option value="versa">versa</option>
+																					
+         </select><br>
+
+
+         <input type="submit" value="Invia">
+     </form>
+    
+     <div>
+	<a href="index2.html"> Per aprire un nuovo conto, CLICCA QUI :</a>
+     </div>
+
+</body>
+</html>
