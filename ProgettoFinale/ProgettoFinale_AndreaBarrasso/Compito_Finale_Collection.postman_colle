@@ -1,0 +1,1751 @@
+{
+	"info": {
+		"_postman_id": "4e9f1634-faee-4b8e-b465-37eb3919240b",
+		"name": "Compito Finale Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20521175"
+	},
+	"item": [
+		{
+			"name": "Provincia",
+			"item": [
+				{
+					"name": "http://localhost:8080/provincia/inserisciprovincia",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sigla\": \"STI\",\r\n  \"provincia\": \"Napoli\",\r\n  \"regione\": \"Campania\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/provincia/inserisciprovincia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"provincia",
+								"inserisciprovincia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/provincia/tutteprovincie?page=0&size=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/provincia/tutteprovincie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"provincia",
+								"tutteprovincie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/provincia/tutteprovincienome/Napoli?page=0&size=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/provincia/tutteprovincienome/Pesaro-Urbino",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"provincia",
+								"tutteprovincienome",
+								"Pesaro-Urbino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/provincia/modificaprovincia",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sigla\": \"STI\",\r\n  \"provincia\": \"Milano\",\r\n  \"regione\": \"Sardegna\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/provincia/modificaprovincia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"provincia",
+								"modificaprovincia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/provincia/eliminaprovincia",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sigla\": \"STI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/provincia/eliminaprovincia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"provincia",
+								"eliminaprovincia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comune",
+			"item": [
+				{
+					"name": "http://localhost:8080/comune/tutticomuni?page=0&size=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comune/tutticomuni",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comune",
+								"tutticomuni"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/comune/tutticomuninome/SanCostanzo?page=0&size=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comune/tutticomuninome/Fano",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comune",
+								"tutticomuninome",
+								"Fano"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/comune/modificacomune",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"nome\": \"Napoli\",\r\n  \"siglaProvincia\": \"STI\",\r\n  \"cap\": \"80021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comune/modificacomune",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comune",
+								"modificacomune"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/comune/eliminacomune",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comune/eliminacomune",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comune",
+								"eliminacomune"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/comune/inseriscicomune",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Fano\",\r\n  \"siglaProvincia\": \"STI\",\r\n  \"cap\": \"03487\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comune/inseriscicomune",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comune",
+								"inseriscicomune"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sede Operativa",
+			"item": [
+				{
+					"name": "http://localhost:8080/sedeoperativa/inseriscisedeoperativa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"via\": \"Via Torino\",\r\n  \"localita\": \"Roma\",\r\n  \"cap\": \"0979\",\r\n  \"idComune\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedeoperativa/inseriscisedeoperativa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedeoperativa",
+								"inseriscisedeoperativa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedeoperativa/tuttesedioperative?page=0&size=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedeoperativa/tuttesedioperative",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedeoperativa",
+								"tuttesedioperative"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedeoperativa/tuttesedioperativevia/Via Torino",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedeoperativa/tuttesedioperativevia/Via Torino",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedeoperativa",
+								"tuttesedioperativevia",
+								"Via Torino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedeoperativa/modificasedeoperativa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"via\": \"Via Danimarca\",\r\n  \"localita\": \"Danimarca\",\r\n  \"cap\": \"90679\",\r\n  \"idComune\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedeoperativa/modificasedeoperativa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedeoperativa",
+								"modificasedeoperativa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedeoperativa/eliminasedeoperativa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedeoperativa/eliminasedeoperativa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedeoperativa",
+								"eliminasedeoperativa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sede Legale",
+			"item": [
+				{
+					"name": "http://localhost:8080/sedelegale/tuttesedilegalivia/Via Croazia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedelegale/tuttesedilegalivia/Via Croazia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedelegale",
+								"tuttesedilegalivia",
+								"Via Croazia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedelegale/modificasedelegale",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"via\": \"Via Olga\",\r\n  \"localita\": \"Federico\",\r\n  \"cap\": \"Giovanni8\",\r\n  \"idComune\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedelegale/modificasedelegale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedelegale",
+								"modificasedelegale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedelegale/eliminasedelegale",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedelegale/eliminasedelegale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedelegale",
+								"eliminasedelegale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedelegale/inseriscisedelegale",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"via\": \"Via Croazia\",\r\n  \"localita\": \"Crozia\",\r\n  \"cap\": \"5834\",\r\n  \"idComune\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedelegale/inseriscisedelegale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedelegale",
+								"inseriscisedelegale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/sedelegale/tuttesedilegali",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0Mjg2NzU4LCJpYXQiOjE2NTM0MjI3NTh9.x1gWahUuoCg77yoquvEV0YAH4NH0qsnPUuclT4baVy-J4sJmEDN7Ggfv_6UPTGb9K-q2KvFz091CfBK5fZzHFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sedelegale/tuttesedilegali",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sedelegale",
+								"tuttesedilegali"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "http://localhost:8080/cliente/inseriscicliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ragioneSociale\": \"Paparazzi\",\r\n  \"partitaIva\": \"907U67T\",\r\n  \"email\": \"francesco@gmail.com\",\r\n  \"dataInserimento\": \"20/03/2000\",\r\n  \"dataUltimoContatto\": \"20/04/2000\",\r\n  \"fatturatoAnnuale\": 500,\r\n  \"pec\": \"string@lori.pec\",\r\n  \"tipoCliente\": \"SAS\",\r\n  \"telefono\": \"33098034\",\r\n  \"emailContatto\": \"lorenzo@lollo.com\",\r\n  \"nomeContatto\": \"francesco\",\r\n  \"cognomeContatto\": \"donati\",\r\n  \"telefonoContatto\": \"403984930\",\r\n  \"idSedeLegale\": 1,\r\n  \"idSedeOperativa\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/inseriscicliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"inseriscicliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/tutticlientidatainserimento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"data\": \"25/05/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/tutticlientidatainserimento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"tutticlientidatainserimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/tutticlientidataultimocontatto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"25/05/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/tutticlientidataultimocontatto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"tutticlientidataultimocontatto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/tutticlienti?page=0&size=10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/tutticlienti?page=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"tutticlienti"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/tutticlientifatturatoannuale/333",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/tutticlientifatturatoannuale/333",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"tutticlientifatturatoannuale",
+								"333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/tutticlientinome/luca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/tutticlientinome/luca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"tutticlientinome",
+								"luca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/cercaprovinciasedelegale/Napoli",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/cercaprovinciasedelegale/Napoli",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"cercaprovinciasedelegale",
+								"Napoli"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/modificacliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"ragioneSociale\": \"LorisGru\",\r\n  \"partitaIva\": \"9046T33\",\r\n  \"email\": \"loris@gmail.com\",\r\n  \"dataInserimento\": \"20/03/2000\",\r\n  \"dataUltimoContatto\": \"20/03/2000\",\r\n  \"fatturatoAnnuale\": 4000,\r\n  \"pec\": \"lopec@pec.it\",\r\n  \"telefono\": \"2938464903\",\r\n  \"emailContatto\": \"loris@gmail.com\",\r\n  \"nomeContatto\": \"Loris\",\r\n  \"cognomeContatto\": \"Camporetti\",\r\n  \"telefonoContatto\": \"0567392\",\r\n  \"idSedeLegale\": 1,\r\n  \"idSedeOperativa\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/modificacliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"modificacliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/cliente/eliminacliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cliente/eliminacliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"eliminacliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fattura",
+			"item": [
+				{
+					"name": "http://localhost:8080/fattura/tuttefattureanno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tuttefattureanno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tuttefattureanno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tuttefatturedata",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"25/05/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tuttefatturedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tuttefatturedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tuttefatture",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tuttefatture",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tuttefatture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tuttefattureperimporto/ 344.5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tuttefattureperimporto/ 344.5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tuttefattureperimporto",
+								" 344.5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tuttefattureperRangeimporto/3/{importo2}?importo2=500",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tuttefattureperRangeimporto/3/{importo2}?importo2=500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tuttefattureperRangeimporto",
+								"3",
+								"{importo2}"
+							],
+							"query": [
+								{
+									"key": "importo2",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tutticlientifattura",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tutticlientifattura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tutticlientifattura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tutticlientiid/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tutticlientiid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tutticlientiid",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/tutticlientistatofattura/locale",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/tutticlientistatofattura/locale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"tutticlientistatofattura",
+								"locale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/eliminafattura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/eliminafattura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"eliminafattura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/modificafattura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": 1,\r\n  \"data\": \"20/02/2000\",\r\n  \"importo\": 100,\r\n  \"statoFattura\": \"string\",\r\n  \"idCliente\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/modificafattura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"modificafattura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/inseriscifattura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"20/05/2000\",\r\n  \"importo\": 20,\r\n  \"statoFattura\": \"locali\",\r\n  \"idCliente\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/inseriscifattura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"inseriscifattura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/fattura/modificafatturastatofattura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": 1,\r\n  \"statoFattura\": \"Carta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fattura/modificafatturastatofattura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fattura",
+								"modificafatturastatofattura"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnaW92YW5uaSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU0MzMxMTM2LCJpYXQiOjE2NTM0NjcxMzZ9.ziyPJhKI88gMHt7YWAKWWZxQ8UhDFaYdOSZ8v3ZmSp5tBm4MQmv7k5wdp6DX9LpR99B2YVXRq3RjF93W5JwVrA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
